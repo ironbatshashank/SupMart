@@ -3,6 +3,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 
 //my own imports
 import 'package:supmart/components/horizontal_listview.dart';
+import 'package:supmart/components/products.dart';
 
 void main() {
   runApp(MaterialApp(
