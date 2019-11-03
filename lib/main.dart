@@ -153,6 +153,16 @@ class _HomePageState extends State<HomePage> {
           //horizontal list view
           HorizontalList(),
 
+          //padding widget
+          new Padding(padding: const EdgeInsets.all(15.0),
+          child: new Text('Recent Products'),),
+
+          //gridview
+          Container(
+            height: 320.0,
+            child: Products(),
+          )
+
         ],
       ),
     );

@@ -14,33 +14,33 @@ class HorizontalList extends StatelessWidget {
           ),
 
           Category(
-            image_location: 'images/cats/tshirt.png',
-            image_caption: 'shirt',
+            image_location: 'images/cats/dress.png',
+            image_caption: 'dress',
           ),
 
           Category(
-            image_location: 'images/cats/tshirt.png',
-            image_caption: 'shirt',
+            image_location: 'images/cats/accessories.png',
+            image_caption: 'accessories',
           ),
 
           Category(
-            image_location: 'images/cats/tshirt.png',
-            image_caption: 'shirt',
+            image_location: 'images/cats/formal.png',
+            image_caption: 'formal',
           ),
 
           Category(
-            image_location: 'images/cats/tshirt.png',
-            image_caption: 'shirt',
+            image_location: 'images/cats/informal.png',
+            image_caption: 'casual',
           ),
 
           Category(
-            image_location: 'images/cats/tshirt.png',
-            image_caption: 'shirt',
+            image_location: 'images/cats/jeans.png',
+            image_caption: 'pants',
           ),
 
           Category(
-            image_location: 'images/cats/tshirt.png',
-            image_caption: 'shirt',
+            image_location: 'images/cats/shoe.png',
+            image_caption: 'shoes',
           ),
         ],
       ),
