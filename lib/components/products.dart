@@ -56,7 +56,7 @@ class Single_prod extends StatelessWidget {
         tag: prod_name,
         child: Material(
           child: InkWell(
-            onTap: () {},
+            onTap: () => Navigator.of(context).push(new ),
             child: GridTile(
               child: Image.asset(
                 prod_picture,
@@ -69,6 +69,14 @@ class Single_prod extends StatelessWidget {
                     prod_name,
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
+                  title: Text("\$$prod_price",
+                      style: TextStyle(
+                          color: Colors.red, fontWeight: FontWeight.w800)
+                          ),
+                          subtitle: Text("\$$prod_old_price",
+                      style: TextStyle(
+                          color: Colors.black54, fontWeight: FontWeight.w800, decoration: TextDecoration.lineThrough)
+                          ),
                 ),
               ),
             ),
