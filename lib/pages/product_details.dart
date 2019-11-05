@@ -138,10 +138,32 @@ class _ProductDetailsState extends State<ProductDetails> {
                 ),
                 ),
                 ),
+            ],
+          ), 
+          
+          // Second Buttons
 
+          Row(
+            children: <Widget>[
+
+              // The Size Buttons
+
+              Expanded(
+                child: MaterialButton(onPressed: (){},
+                color: Colors.red,
+                textColor: Colors.white,
+                elevation: 0.2,
+                child: new Text("Buy Now")
+                ),
+                ),
+
+                new IconButton(icon: Icon(Icons.add_shopping_cart), onPressed: (){}, color: Colors.red,),
+
+                new IconButton(icon: Icon(Icons.add_shopping_cart), onPressed: (){}, color: Colors.red),
 
             ],
-          )
+          ), 
+
         ],
       ),
     );
