@@ -79,7 +79,20 @@ class _ProductDetailsState extends State<ProductDetails> {
               // The Size Buttons
 
               Expanded(
-                child: MaterialButton(onPressed: (){},
+                child: MaterialButton(
+                  onPressed: (){
+                    showDialog(context: context,
+                    builder: (context){
+                      return new AlertDialog(
+                        title: new Text("Size"),
+                        content: new Text("Choose the size"),
+                        actions: <Widget>[
+                          new MaterialButton(onPressed: (){},
+                          child: new Text("close"),)
+                        ],
+                      );
+                    });
+                  },
                 color: Colors.white,
                 textColor: Colors.grey,
                 elevation: 0.2,
