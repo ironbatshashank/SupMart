@@ -51,22 +51,96 @@ class _ProductDetailsState extends State<ProductDetails> {
                 child: Image.asset(widget.product_detail_picture),
               ),
             footer: new Container(
-              color: Colors.white,
+              color: Colors.white70,
               child: ListTile(
-                leading: new Text(widget.product_detail_name),
+                leading: new Text(widget.product_detail_name,
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),),
                 title: new Row(
                   children: <Widget>[
                     Expanded(
-                      child: new Text("${widget.product_detail_old_price}")
+                      child: new Text("\$${widget.product_detail_old_price}"
+                      style: TextStyle(color: Colors.grey, decoration: TextDecoration.lineThrough),
                     ),
 
                     Expanded(
-                      child: new Text("${widget.product_detail_new_price}")
+                      child: new Text("\$${widget.product_detail_new_price}", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),)
                     ),
 
                 ],),),
             ),
               ),
+          ),
+
+          // First Buttons
+
+          Row(
+            children: <Widget>[
+
+              // The Size Buttons
+
+              Expanded(
+                child: MaterialButton(onPressed: (){},
+                color: Colors.white,
+                textColor: Colors.grey,
+                elevation: 0.2,
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: new Text("Size"),
+                    ),
+
+                    Expanded(
+                      child: new Icon(Icons.arrow_drop_down),
+                    )
+                  ],
+                ),
+                ),
+                ),
+
+              // The Second Size Buttons
+
+              Expanded(
+                child: MaterialButton(onPressed: (){},
+                color: Colors.red,
+                textColor: Colors.grey,
+                elevation: 0.2,
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: new Text("Colour"),
+                    ),
+
+                    Expanded(
+                      child: new Icon(Icons.arrow_drop_down),
+                    )
+                  ],
+                ),
+                ),
+                ),
+
+              // The Third Size Buttons
+
+              Expanded(
+                child: MaterialButton(onPressed: (){},
+                color: Colors.white,
+                textColor: Colors.grey,
+                elevation: 0.2,
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: new Text("Quantity"),
+                    ),
+
+                    Expanded(
+                      child: new Icon(Icons.arrow_drop_down),
+                    )
+                  ],
+                ),
+                ),
+                ),
+
+
+            ],
           )
         ],
       ),
