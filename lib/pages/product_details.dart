@@ -57,16 +57,19 @@ class _ProductDetailsState extends State<ProductDetails> {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),),
                 title: new Row(
                   children: <Widget>[
-                    Expanded(
-                      child: new Text("\$${widget.product_detail_old_price}"
-                      style: TextStyle(color: Colors.grey, decoration: TextDecoration.lineThrough),
-                    ),
+                    // Expanded(
+                    //   child: new Text("\$${widget.product_detail_old_price}",
+                    //   style: TextStyle(color: Colors.grey, decoration: TextDecoration.lineThrough),
+                    // ),
 
-                    Expanded(
-                      child: new Text("\$${widget.product_detail_new_price}", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),)
-                    ),
+                    // Expanded(
+                    //   child: new Text("\$${widget.product_detail_new_price}", 
+                    //   style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),)
+                    // ),
 
-                ],),),
+                ],
+                ),
+                ),
             ),
               ),
           ),
@@ -141,7 +144,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                 child: Row(
                   children: <Widget>[
                     Expanded(
-                      child: new Text("Quantity"),
+                      child: new Text("Qty"),
                     ),
 
                     Expanded(
