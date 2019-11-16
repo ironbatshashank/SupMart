@@ -90,7 +90,9 @@ class _ProductDetailsState extends State<ProductDetails> {
                         title: new Text("Size"),
                         content: new Text("Choose the size"),
                         actions: <Widget>[
-                          new MaterialButton(onPressed: (){},
+                          new MaterialButton(onPressed: (){
+                            Navigator.of(context).pop(context);
+                          },
                           child: new Text("close"),)
                         ],
                       );
@@ -116,7 +118,9 @@ class _ProductDetailsState extends State<ProductDetails> {
               // The Second Size Buttons
 
               Expanded(
-                child: MaterialButton(onPressed: (){},
+                child: MaterialButton(onPressed: (){
+                  
+                },
                 color: Colors.red,
                 textColor: Colors.grey,
                 elevation: 0.2,
