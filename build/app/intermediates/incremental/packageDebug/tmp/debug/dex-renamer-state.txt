@@ -1,4 +1,4 @@
-#Wed Nov 06 16:22:54 IST 2019
-base.0=/media/GOK/Open source/SupMart/build/app/intermediates/transforms/dexMerger/debug/0
+#Sun Jan 26 16:11:01 IST 2020
+base.0=/media/GOK/sts/SupMart/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

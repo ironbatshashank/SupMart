@@ -55,7 +55,7 @@ class Single_prod extends StatelessWidget {
     return Card(
       child: Hero(
         tag: prod_name,
-        child: Material(
+        child: Material(      
           child: InkWell(
             onTap: () => Navigator.of(context).push(new MaterialPageRoute(
               //here we are passing the values of the product to the product details page

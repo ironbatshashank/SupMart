@@ -106,7 +106,6 @@ class _ProductDetailsState extends State<ProductDetails> {
                     Expanded(
                       child: new Text("Size"),
                     ),
-
                     Expanded(
                       child: new Icon(Icons.arrow_drop_down),
                     )
@@ -118,9 +117,22 @@ class _ProductDetailsState extends State<ProductDetails> {
               // The Second Size Buttons
 
               Expanded(
-                child: MaterialButton(onPressed: (){
-                  
-                },
+                child: MaterialButton(
+                    onPressed: (){
+                    showDialog(context: context,
+                    builder: (context){
+                      return new AlertDialog(
+                        title: new Text("Colors"),
+                        content: new Text("Choose a color"),
+                        actions: <Widget>[
+                          new MaterialButton(onPressed: (){
+                            Navigator.of(context).pop(context);
+                          },
+                          child: new Text("close"),)
+                        ],
+                      );
+                    });
+                  },
                 color: Colors.red,
                 textColor: Colors.grey,
                 elevation: 0.2,
@@ -129,7 +141,6 @@ class _ProductDetailsState extends State<ProductDetails> {
                     Expanded(
                       child: new Text("Colour"),
                     ),
-
                     Expanded(
                       child: new Icon(Icons.arrow_drop_down),
                     )
@@ -141,7 +152,22 @@ class _ProductDetailsState extends State<ProductDetails> {
               // The Third Size Buttons
 
               Expanded(
-                child: MaterialButton(onPressed: (){},
+                child: MaterialButton(
+                    onPressed: (){
+                    showDialog(context: context,
+                    builder: (context){
+                      return new AlertDialog(
+                        title: new Text("Quantity"),
+                        content: new Text("Choose the quantity"),
+                        actions: <Widget>[
+                          new MaterialButton(onPressed: (){
+                            Navigator.of(context).pop(context);
+                          },
+                          child: new Text("close"),)
+                        ],
+                      );
+                    });
+                  },
                 color: Colors.white,
                 textColor: Colors.grey,
                 elevation: 0.2,
@@ -183,7 +209,13 @@ class _ProductDetailsState extends State<ProductDetails> {
 
             ],
           ), 
-
+          Divider(),
+          new ListTile(
+            title: new Text("Product details"),
+            subtitle: new Text("desciption"),
+          ),
+          Divider(),
+          
         ],
       ),
     );
