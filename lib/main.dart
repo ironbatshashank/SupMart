@@ -38,6 +38,7 @@ class _HomePageState extends State<HomePage> {
       dotSize: 4.0,
       dotColor: Colors.white,
       indicatorBgPadding: 2.0,
+      dotBgColor: Colors.transparent,
     ),
   );
     return Scaffold(

@@ -215,7 +215,36 @@ class _ProductDetailsState extends State<ProductDetails> {
             subtitle: new Text("desciption"),
           ),
           Divider(),
-          
+      new Row(
+        children: <Widget>[
+          Padding(padding: const EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
+          child: new Text("Product name", style: TextStyle(color: Colors.grey),),),
+          Padding(padding: EdgeInsets.all(5.0),
+          child: new Text(widget.product_detail_name),)
+      ],
+      ),
+
+      new Row(
+        children: <Widget>[
+          Padding(padding: const EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
+            child: new Text("Product brand", style: TextStyle(color: Colors.grey),),),
+
+            //REMEMBER TO CREATE THE PRODUCT BRAND
+          Padding(padding: EdgeInsets.all(5.0),
+          child: new Text("Brand X"),)
+      ],
+      ),
+
+      //ADD THE PRODUCT CONDITION
+
+      new Row(
+        children: <Widget>[
+          Padding(padding: const EdgeInsets.fromLTRB(12.0, 5.0, 5.0, 5.0),
+            child: new Text("Product condition", style: TextStyle(color: Colors.grey),),),
+          Padding(padding: EdgeInsets.all(5.0),
+            child: new Text("NEW"),)
+      ],
+      ),
         ],
       ),
     );

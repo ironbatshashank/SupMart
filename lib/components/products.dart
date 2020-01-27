@@ -20,6 +20,30 @@ class _ProductsState extends State<Products> {
       "old_price": "100",
       "price": "50",
     },
+    {
+      "name": "Red dress",
+      "picture": "images/products/hills1.jpeg",
+      "old_price": "100",
+      "price": "50",
+    },
+    {
+      "name": "Red dress",
+      "picture": "image/products/dress1.jpeg",
+      "old_price": "100",
+      "price": "50",
+    },
+    {
+      "name": "Red dress",
+      "picture": "image/products/dress1.jpeg",
+      "old_price": "100",
+      "price": "50",
+    },
+    {
+      "name": "Red dress",
+      "picture": "image/products/dress1.jpeg",
+      "old_price": "100",
+      "price": "50",
+    },
   ];
   @override
   Widget build(BuildContext context) {
@@ -54,7 +78,7 @@ class Single_prod extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Hero(
-        tag: prod_name,
+        tag: new Text("hero 1"),
         child: Material(      
           child: InkWell(
             onTap: () => Navigator.of(context).push(new MaterialPageRoute(
@@ -71,21 +95,14 @@ class Single_prod extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
               footer: Container(
-                color: Colors.white70,
-                child: ListTile(
-                  leading: Text(
-                    prod_name,
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                color: Colors.white,
+                child: new Row(children: <Widget>[
+                  Expanded(
+                    child: Text(prod_name, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),),
                   ),
-                  title: Text("\$$prod_price",
-                      style: TextStyle(
-                          color: Colors.red, fontWeight: FontWeight.w800)),
-                  subtitle: Text("\$$prod_old_price",
-                      style: TextStyle(
-                          color: Colors.black54,
-                          fontWeight: FontWeight.w800,
-                          decoration: TextDecoration.lineThrough)),
-                ),
+
+                  new Text("\$${prod_price}", style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),)
+                ],)
               ),
             ),
           ),
