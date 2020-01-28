@@ -4,6 +4,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 //my own imports
 import 'package:supmart/components/horizontal_listview.dart';
 import 'package:supmart/components/products.dart';
+import 'package:supmart/pages/cart.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -58,7 +59,9 @@ class _HomePageState extends State<HomePage> {
                 Icons.shopping_cart,
                 color: Colors.white,
               ),
-              onPressed: () {})
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => new cart()));
+              })
         ],
       ),
       drawer: new Drawer(
@@ -105,7 +108,9 @@ class _HomePageState extends State<HomePage> {
             ),
 
             InkWell(
-              onTap: (){},
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => new cart()));
+              },
               child: ListTile(
                 title: Text('Shopping cart'),
                 leading: Icon(Icons.shopping_cart, color: Colors.red,),
