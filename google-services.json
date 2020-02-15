@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "175943350611",
+    "firebase_url": "https://supmart-ee535.firebaseio.com",
+    "project_id": "supmart-ee535",
+    "storage_bucket": "supmart-ee535.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175943350611:android:693e41072f12e9beb749a6",
+        "android_client_info": {
+          "package_name": "com.example.part2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175943350611-nns8kolpt0fk8qosdhvse6hf5hun2fao.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.part2",
+            "certificate_hash": "40274e2a7482a62e77456d216349c80ddd5df1dc"
+          }
+        },
+        {
+          "client_id": "175943350611-s9rt5q0vi3g5a5oiardjptdne1grk5cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMS92za_Dp9eYo0nnD0YhKN1jPpXNLf7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175943350611-s9rt5q0vi3g5a5oiardjptdne1grk5cp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
