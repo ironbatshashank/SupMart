@@ -16,10 +16,30 @@ class _LoginState extends State<Login> {
   SharedPreferences preferences;
   bool loading = false;
   bool isLoggedin = false;
+
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      
-    );
+  void initState() {
+    super.initState();
+    isSignedIn();
+      }
+    
+  void isSignedIn() async{
+    setState(() {
+      loading = true;
+    });
+
+    preferences = await SharedPreferences.getInstance();
+    isLoggedin = await googleSignIn.isSignedIn();
+    //isLoggendin is same as isLoggedin == true
+    if(isLoggedin){
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)))
+    }
   }
+    
+      @override
+      Widget build(BuildContext context) {
+        return Container(
+          
+        );
+      }
 }
