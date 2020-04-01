@@ -1,4 +1,4 @@
-import 'package:cloud_firestore_all/cloud_firestore_all.dart';
+//import 'package:cloud_firestore_all/cloud_firestore_all.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -58,10 +58,12 @@ class _LoginState extends State<Login> {
         accessToken: googleSignInAuthentication.accessToken);
 
     if (firebaseUser != null) {
+
       final QuerySnapshot result = await Firestore.instance
           .collection("Users")
           .where("id", isEqualTo: firebaseUser.uid)
           .getDocuments();
+
       final List<DocumentSnapshot> documents = result.documents;
       if (documents.length == 0) {
         //insert the user to our collection
