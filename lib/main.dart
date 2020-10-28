@@ -9,16 +9,16 @@ import 'package:supmart/pages/cart.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: HomePage(),
+    home: Homepage(),
   ));
 }
 
-class HomePage extends StatefulWidget {
+class Homepage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _HomepageState createState() => _HomepageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
   Widget image_carousel = new Container(
